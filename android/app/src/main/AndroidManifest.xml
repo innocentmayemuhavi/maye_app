@@ -2,7 +2,7 @@
     <application
         android:label="maye_app"
         android:name="${applicationName}"
-        android:icon="@mipmap/logo">
+        android:icon="@mipmap/logoimg">
         <activity
             android:name=".MainActivity"
             android:exported="true"
