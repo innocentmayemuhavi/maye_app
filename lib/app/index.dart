@@ -47,17 +47,17 @@ class Home extends StatelessWidget {
       ),
       body: ListView(
         children: const <Widget>[
-          Personal_Details(),
+          PersonalDetails(),
           Divider(
             height: 5.0,
             color: null,
           ),
-          Education_Background(),
+          EducationBackground(),
           Divider(
             height: 5.0,
             color: null,
           ),
-          Work_Experience(),
+          WorkExperience(),
         ],
       ),
       floatingActionButton: const FloatingActionButton(

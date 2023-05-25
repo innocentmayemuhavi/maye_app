@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 
-class Work_Experience extends StatelessWidget {
-  const Work_Experience({super.key});
+class WorkExperience extends StatelessWidget {
+  const WorkExperience({super.key});
 
   @override
   Widget build(BuildContext context) {

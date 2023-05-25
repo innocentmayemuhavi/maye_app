@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // Personal information widget
-class Personal_Details extends StatelessWidget {
-  const Personal_Details({super.key});
+class PersonalDetails extends StatelessWidget {
+  const PersonalDetails({super.key});
 
   @override
   Widget build(BuildContext context) {

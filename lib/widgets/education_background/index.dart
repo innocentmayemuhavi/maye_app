@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 //education background widget
 
-// ignore: camel_case_types
-class Education_Background extends StatelessWidget {
-  const Education_Background({super.key});
+
+class EducationBackground extends StatelessWidget {
+  const EducationBackground({super.key});
 
   @override
   Widget build(BuildContext context) {
