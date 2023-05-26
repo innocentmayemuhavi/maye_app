@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:maye_app/widgets/work_experience/index.dart';
 import 'package:maye_app/widgets/personal_information/index.dart';
 import 'package:maye_app/widgets/education_background/index.dart';
+import 'package:maye_app/widgets/table/table.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -58,6 +59,11 @@ class Home extends StatelessWidget {
             color: null,
           ),
           WorkExperience(),
+          Divider(
+            height: 5.0,
+            color: null,
+          ),
+          StyledTable(),
         ],
       ),
       floatingActionButton: const FloatingActionButton(

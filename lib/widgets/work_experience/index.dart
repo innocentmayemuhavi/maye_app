@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-
 
 class WorkExperience extends StatelessWidget {
   const WorkExperience({super.key});
@@ -9,174 +7,144 @@ class WorkExperience extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-          height: 330.0,
-          margin: const EdgeInsets.fromLTRB(7.0, 3.0, 7.0, 10.0),
-          padding: const EdgeInsets.fromLTRB(7, 10, 7, 10),
-          decoration: BoxDecoration(
-            border: Border.all(),
-            color: Colors.indigo[900],
-            borderRadius: const BorderRadius.all(
-              Radius.circular(17.0),
-            ),
+        height: 330.0,
+        margin: const EdgeInsets.fromLTRB(7.0, 3.0, 7.0, 10.0),
+        padding: const EdgeInsets.fromLTRB(7, 10, 7, 10),
+        decoration: BoxDecoration(
+          border: Border.all(),
+          color: Colors.indigo[900],
+          borderRadius: const BorderRadius.all(
+            Radius.circular(17.0),
           ),
-          child: Column(
-            children: <Widget>[
-              const Center(
-                child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/2.png'),
-                  radius: 53.0,
-                ),
+        ),
+        child: Column(
+          children: <Widget>[
+            const Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/2.png'),
+                radius: 53.0,
               ),
-              const Divider(
-                height: 15.0,
-                color: null,
+            ),
+            const Divider(
+              height: 15.0,
+              color: null,
+            ),
+            const Center(
+              child: Text(
+                'Work Experience',
+                style: TextStyle(
+                    fontSize: 23.0,
+                    fontWeight: FontWeight.bold,
+                    wordSpacing: 2,
+                    color: Colors.white,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Color.fromARGB(245, 245, 245, 245)),
               ),
-              const Center(
-                child: Text(
-                  'Work Experience',
-                  style: TextStyle(
-                      fontSize: 23.0,
-                      fontWeight: FontWeight.bold,
-                      wordSpacing: 2,
-                      color: Colors.white,
-                      decoration: TextDecoration.underline,
-                      decorationColor: Color.fromARGB(245, 245, 245, 245)),
-                ),
+            ),
+            const Divider(
+              color: null,
+            ),
+            Table(
+              // Define table properties here  
+              border: TableBorder.all(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(7.0),
+                width: 4.0,
               ),
-              const Divider(
-                color: null,
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(7.0, 5.0, 7.0, 5.0),
-                child: Table(
-                  border: TableBorder.all(
-                      color: Colors.black,
-                      style: BorderStyle.solid,
-                      width: 3.1),
-                  columnWidths: const <int, TableColumnWidth>{
-                    0: IntrinsicColumnWidth(),
-                    1: FlexColumnWidth(),
-                  },
-                  defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-                  children: const <TableRow>[
-                    TableRow(
-                      children: <Widget>[
-                        Center(
-                          child: Text(
-                            'Year',
-                            style: TextStyle(
-                              fontSize: 22.0,
-                              fontWeight: FontWeight.bold,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
+
+              children: [
+                TableRow(
+                  decoration: const BoxDecoration(
+                    color: Color.fromARGB(255, 222, 217, 217),
+                  ),
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(14.0),
+                        child: const Text(
+                          'Company',
+                          style: TextStyle(
+                            fontSize: 23.0,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Center(
-                          child: Text(
-                            'Company',
-                            style: TextStyle(
-                              fontSize: 22.0,
-                              fontWeight: FontWeight.bold,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Center(
-                          child: Text(
-                            'Role',
-                            style: TextStyle(
-                              fontSize: 22.0,
-                              fontWeight: FontWeight.bold,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
-                    TableRow(
-                      decoration: BoxDecoration(),
-                      children: <Widget>[
-                        Center(
-                          child: Text(
-                            '2023 -',
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(14.0),
+                        child: const Text(
+                          'Role',
+                          style: TextStyle(
+                            fontSize: 23.0,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Center(
-                          child: Text(
-                            'Saboja',
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Center(
-                          child: Text(
-                            'Software Engineer',
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    TableRow(
-                      decoration: BoxDecoration(),
-                      children: <Widget>[
-                        Center(
-                          child: Text(
-                            '2023-',
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Center(
-                          child: Text(
-                            " Talco Contractors",
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Center(
-                          child: Text(
-                            'Software Engineer',
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              wordSpacing: 2,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ],
                 ),
-              )
-            ],
-          )),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(14.0),
+                        child: const Text(
+                          'Saboja ',
+                          style: TextStyle(
+                            fontSize: 23.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(14.0),
+                        child: const Text(
+                          'Software Engineer',
+                          style: TextStyle(
+                            fontSize: 23.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(14.0),
+                        child: const Text(
+                          'Talco Contactors',
+                          style: TextStyle(
+                            fontSize: 23.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(14.0),
+                        child: const Text(
+                          'Software Engineer',
+                          style: TextStyle(
+                            fontSize: 23.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
